@@ -42,13 +42,13 @@ public class Sketch extends PApplet {
   public void setup() {
     background(255, 255, 255);
 
-    imgGoob = loadImage("Stand.png");
+    imgGoob = loadImage("/images/Stand.png");
     imgGoob.resize(imgGoob.width * 2, imgGoob.height * 2);
 
-    imgGrass = loadImage("Grass.png");
+    imgGrass = loadImage("/images/Grass.png");
     imgGrass.resize(450, 150);
 
-    imgPlatform = loadImage("Platform.png");
+    imgPlatform = loadImage("/images/Platform.png");
     imgPlatform.resize(imgPlatform.width * 2, imgPlatform.height * 2);
 
   }
@@ -151,19 +151,19 @@ public class Sketch extends PApplet {
     // floor sprites
     if(isOnFloor() == true){
       if(intDirection == 1){
-        imgGoob = loadImage("Stand.png");
+        imgGoob = loadImage("/images/Stand.png");
         imgGoob.resize(imgGoob.width * 2, imgGoob.height * 2);
       } else {
-        imgGoob = loadImage("Stand2.png");
+        imgGoob = loadImage("/images/Stand2.png");
         imgGoob.resize(imgGoob.width * 2, imgGoob.height * 2);
       }
     // air sprites
     } else {
       if(intDirection == 1){
-        imgGoob = loadImage("Jump.png");
+        imgGoob = loadImage("/images/Jump.png");
         imgGoob.resize(imgGoob.width * 2, imgGoob.height * 2);
       } else {
-        imgGoob = loadImage("Jump2.png");
+        imgGoob = loadImage("/images/Jump2.png");
         imgGoob.resize(imgGoob.width * 2, imgGoob.height * 2);
       }
     }
